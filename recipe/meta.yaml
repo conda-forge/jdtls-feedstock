@@ -1,5 +1,5 @@
 {% set name = "jdtls" %}
-{% set version = "1.39.0" %}
+{% set version = "1.40.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/eclipse/eclipse.jdt.ls/archive/v{{ version }}.tar.gz
-  sha256: 0ae823af433b523afda100e5037f3286901ddb2e72a4c79fb4ab113d3f71c117
+  sha256: 4fb9c19c0e23cd02146ae4a15a33aaeee834b231cdf9fe5d9711ed4a907fbd76
 
 build:
   noarch: generic
