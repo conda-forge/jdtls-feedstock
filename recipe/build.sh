@@ -16,6 +16,7 @@ tee ${PREFIX}/bin/jdtls << EOF
 #!/bin/sh
 exec \${CONDA_PREFIX}/libexec/jdtls/bin/jdtls "\$@"
 EOF
+chmod +x ${PREFIX}/bin/jdtls
 
 tee ${PREFIX}/bin/jdtls.cmd << EOF
 call %CONDA_PREFIX%\libexec\jdtls\bin\jdtls.bat %*
