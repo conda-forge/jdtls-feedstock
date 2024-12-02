@@ -1,17 +1,17 @@
-{% set name = "jdtls" %}
-{% set version = "1.40.0" %}
+context:
+  version: 1.40.0
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: jdtls
+  version: ${{ version }}
 
 source:
-  url: https://github.com/eclipse/eclipse.jdt.ls/archive/v{{ version }}.tar.gz
+  url: https://github.com/eclipse/eclipse.jdt.ls/archive/v${{ version }}.tar.gz
   sha256: 4fb9c19c0e23cd02146ae4a15a33aaeee834b231cdf9fe5d9711ed4a907fbd76
 
 build:
-  noarch: generic
   number: 0
+  noarch: generic
 
 requirements:
   build:
@@ -21,17 +21,17 @@ requirements:
     - openjdk
     - python
 
-test:
-  commands:
-    - jdtls --help
+tests:
+  - script:
+      - jdtls --help
 
 about:
-  home: https://github.com/eclipse/eclipse.jdt.ls
   license: EPL-2.0
   license_file:
     - LICENSE
     - target/generated-resources/licenses/
   summary: Java language specific implementation of the Language Server Protocol
+  homepage: https://github.com/eclipse/eclipse.jdt.ls
 
 extra:
   recipe-maintainers:
