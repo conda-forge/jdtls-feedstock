@@ -4,7 +4,7 @@
 
 [project]
 name = "jdtls-feedstock"
-version = "3.44.9"
+version = "3.45.3"
 description = "Pixi configuration for conda-forge/jdtls-feedstock"
 authors = ["@conda-forge/jdtls"]
 channels = ["conda-forge"]
