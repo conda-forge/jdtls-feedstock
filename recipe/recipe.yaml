@@ -1,5 +1,5 @@
 context:
-  version: "1.45.0"
+  version: "1.46.0"
 
 package:
   name: jdtls
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/eclipse/eclipse.jdt.ls/archive/v${{ version }}.tar.gz
-  sha256: e16f5a01a879560ccace6e40c603c8837e2ec903f7e59ebf5ae8bc753fc32d00
+  sha256: 9ff00d0b4977b364c0752ed3e2a971a055b47ff63ba421aec808cbab0b734896
 
 build:
   number: 0
