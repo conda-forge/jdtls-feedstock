@@ -3,6 +3,9 @@
 set -o xtrace -o nounset -o pipefail -o errexit
 touch ${BUILD_PREFIX}/lib/jvm/release
 
+cp ${RECIPE_DIR}/0001-use-release-repository.patch ${SRC_DIR}
+patch -p0 0001-use-release-repository.patch
+
 # Build with maven
 ./mvnw install -T 1 -DskipTests=true -Dmaven.local.repo=$SRC_DIR
 
