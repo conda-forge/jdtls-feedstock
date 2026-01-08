@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/eclipse/eclipse.jdt.ls/archive/v${{ version }}.tar.gz
   sha256: 3cc1b6aab3c37233d679d84ae93c71ce1295efc58e852c248e800685cb8bd084
-  patches:
-    - use-release-repository.patch
 
 build:
   number: 0
